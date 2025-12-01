@@ -1,43 +1,42 @@
-# Linux-Deep-dive
----
+# 🐧 **Linux Deep Dive — Become a Linux Grandmaster**
 
-# 🐧 **Linux Grandmaster Roadmap & Knowledge Base**
+A **complete mastery roadmap & reference library** designed to turn you into the kind of engineer companies rely on during outages, migrations, incident war rooms & performance debugging.
 
-A complete structured learning & reference repository designed to build mastery equivalent to a career Linux veteran — covering fundamentals → kernel internals → debugging → high availability → production war-room skills.
-
-If you want to *not just use Linux but rule it*, this is your map.
-Every topic is backed with labs, deep explanations & practical commands.
+> Not just *Linux usage* — **Linux Mastery.**
+> From basics → kernel internals → production chaos handling.
 
 ---
 
-## 📌 Index (Complete Knowledge Map)
+## 📌 Master Index — The Entire Knowledge Map
 
-| Module | Title                                      |
-| ------ | ------------------------------------------ |
-| 0      | 🔥 Foundations & Environment               |
-| 1      | 📁 Filesystem & Navigation                 |
-| 2      | 🔐 Permissions, ACL & Ownership            |
-| 3      | 📝 Text Processing & Streams               |
-| 4      | 🐚 Shell Scripting & Automation            |
-| 5      | 👤 Users, Groups, Authentication           |
-| 6      | 🧵 Processes, Jobs & Signals               |
-| 7      | ⚙️ Boot Process, GRUB & systemd            |
-| 8      | 📦 Package Management (apt/yum/rpm/pacman) |
-| 9      | 💽 Storage, Filesystems, LVM & RAID        |
-| 10     | 🌐 Networking Internals & Debugging        |
-| 11     | 🧠 Kernel Architecture & Internals         |
-| 12     | 🚀 Performance Tuning & eBPF Profiling     |
-| 13     | 🔥 Security, SELinux, Hardening            |
-| 14     | 🧊 Virtualization (KVM/QEMU)               |
-| 15     | 🐳 Containers & cgroups Namespaces         |
-| 16     | ☸️ Kubernetes Internals & Production       |
-| 17     | 🏗️ Distributed Systems & HA               |
-| 18     | 📦 Backups, Snapshots & Disaster Recovery  |
-| 19     | ⚠️ War Room Production Failures & Fixes    |
+| Module | Topic                                        |
+| ------ | -------------------------------------------- |
+| 00     | 🔥 Foundations & Environment                 |
+| 01     | 📁 Filesystem, Inodes & Navigation           |
+| 02     | 🔐 Permissions, ACL, SUID/SGID/Sticky Bits   |
+| 03     | 📝 Text Processing (grep/awk/sed + regex)    |
+| 04     | 🐚 Shell Scripting & Automation              |
+| 05     | 👤 Users, Groups, Authentication             |
+| 06     | 🧵 Process Control, Jobs, Signals            |
+| 07     | ⚙️ Boot Process, GRUB, systemd               |
+| 08     | 📦 Package Management (apt/yum/rpm)          |
+| 09     | 💽 Storage, Filesystems, LVM, RAID           |
+| 10     | 🌐 Networking Deep-Dive + Packet Debugging   |
+| 11     | 🧠 Kernel Architecture, Scheduling, Syscalls |
+| 12     | 🚀 Performance Tuning & eBPF Profiling       |
+| 13     | 🔥 Security, SELinux, AppArmor Hardening     |
+| 14     | 🧊 Virtualization (KVM/QEMU)                 |
+| 15     | 🐳 Containers, cgroups, Namespaces           |
+| 16     | ☸ Kubernetes Internals + Production Tuning   |
+| 17     | 🏗 Distributed Systems & HA Architecture     |
+| 18     | 📦 Backup, Snapshots, DR & Data Recovery     |
+| 19     | ⚠ War Room: Real Production Outages & Fixes  |
+
+Each topic is not just theory — but built for **hands-on mastery**.
 
 ---
 
-## 📂 Repo Directory Structure
+## 📂 Repository Layout
 
 ```
 linux-grandmaster-roadmap/
@@ -64,43 +63,49 @@ linux-grandmaster-roadmap/
 └── 19-war-room/
 ```
 
-Each folder will contain:
+Every module contains:
 
-| File                 | Description                |
-| -------------------- | -------------------------- |
-| `NOTES.md`           | Deep explanation theory    |
-| `COMMANDS.md`        | Quick reference commands   |
-| `LABS.md`            | Hands-on tasks to practice |
-| `cheatsheet.md`      | Fast revision sheet        |
-| `troubleshooting.md` | Real incident based issues |
-
----
-
-## 🧪 LABS (Real-World Hands-On Exercises)
-
-| Lab    | Topic                                                 |
-| ------ | ----------------------------------------------------- |
-| Lab001 | Build & mount filesystem manually                     |
-| Lab002 | Recover corrupted GRUB bootloader                     |
-| Lab003 | Trace syscall using `strace` & eBPF                   |
-| Lab004 | Simulate OOM & debug memory leak                      |
-| Lab005 | Packet tracing using `tcpdump`                        |
-| Lab006 | Configure RAID10 & benchmark I/O                      |
-| Lab007 | Write systemd service for custom app                  |
-| Lab008 | Create container without Docker (namespace + cgroups) |
-| Lab009 | Chaos test: fill disk & rescue system                 |
-| Lab010 | Zero-trust SSH hardening project                      |
-
-(We can generate 100+ labs gradually.)
+| File              | Purpose                         |
+| ----------------- | ------------------------------- |
+| `NOTES.md`        | Deep theory & concepts          |
+| `COMMANDS.md`     | High-speed command reference    |
+| `LABS.md`         | Hands-on practical exercises    |
+| `CHEATSHEET.md`   | Quick revision snapshot         |
+| `TROUBLESHOOT.md` | Break-fix guided investigations |
 
 ---
 
-## 🎯 Goal of This Repository
+## 🧪 Practical Lab Projects
 
-✔ Become Linux architect level — not just command user
-✔ Troubleshoot real failures without panic
-✔ Understand kernel, CPU, memory & networking like a mechanic
-✔ Automate everything using shell & systems knowledge
-✔ Build production-grade infra from bare metal to Kubernetes
+| Lab    | Skill                                                         |
+| ------ | ------------------------------------------------------------- |
+| Lab001 | Create a filesystem manually, mount & explore inode structure |
+| Lab002 | Break GRUB intentionally & restore bootloader                 |
+| Lab003 | Trace syscalls using `strace` & eBPF                          |
+| Lab004 | Trigger OOM & learn memory debugging                          |
+| Lab005 | Deep network inspection using tcpdump                         |
+| Lab006 | Set up RAID10 + benchmark vs RAID0 & RAID5                    |
+| Lab007 | Build a systemd service & daemonize your script               |
+| Lab008 | Create a Linux container manually (no Docker)                 |
+| Lab009 | Simulate full disk, fix inode exhaustion                      |
+| Lab010 | Zero-trust SSH hardening with fail2ban & keys                 |
+
+(We can expand to **100+ labs** as the repo grows.)
 
 ---
+
+## 🎯 Final Goal of This Repository
+
+✔ Build senior–level Linux intuition
+✔ Debug failures without panic
+✔ Understand system internals (not just commands)
+✔ Become production-ready for migration, outages & scaling
+✔ Be the one who **fixes things when the whole team is stuck**
+
+If you follow this roadmap completely,
+you won’t just *use Linux* —
+you will **command it**.
+
+---
+
+🔥 Ready when you are.
