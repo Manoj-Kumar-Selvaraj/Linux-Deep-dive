@@ -1,5 +1,3 @@
----
-
 ## 📖 Chapter 1 — *What is Linux, Really?*
 
 ### **1.1 — Kernel vs GNU vs Distribution**
